@@ -8,10 +8,10 @@ jobs:
     runs-on: windows-2022
     timeout-minutes: 350
 
-env:
-  RDP_USER: santanu
-  RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
-  TS_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
+    env:
+      RDP_USER: santanu
+      RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
+      TS_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
 
     steps:
       - name: Configure RDP (NLA left enabled)
