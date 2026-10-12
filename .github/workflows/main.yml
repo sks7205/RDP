@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-2022
-    timeout-minutes: 350
+    
 
     env:
       RDP_USER: santanu
